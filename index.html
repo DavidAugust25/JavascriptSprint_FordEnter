@@ -31,13 +31,20 @@
     </header>
     <main>
         <div id="carousel">
+            <img src="img/imagem_1.jpg" alt="primeira imagem">
+            <img src="img/imagem_2.jpg" alt="segunda imagem">
+            <img src="img/imagem_3.jpg" alt="terceira imagem">
         </div>
         <div id="carousel-title">
+            <span><a href="lancamento.html">Esta é a nova Ranger Ford 2022. Verifique novidades.</a></span>
+            <span><a href="#">Ford, a nossa história</a></span>
+            <span><a href="lancamento.html">Nova Ford Bronco Sport 2022</a></span>
         </div>
+        <div id="nextprev"><button class="prev" onclick="prevSlide()">&#10094</button><button class="next" onclick="nextSlide()">&#10095</button></div>
         <script>
-             //insert each image on carousel
+             //inserir cada imagem no carrossel.
             carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
-            carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
+            carouselArr.push(new Carousel("imagem_2.jpg","Ford, a nossa história","#"));
             carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
             Carousel.Start(carouselArr);
         </script>

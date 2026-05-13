@@ -1,12 +1,12 @@
 
 
-//carousel
+//carrossel
 
-//Array storage class
+//classe conjunto de armazenamento
 let carouselArr = [];
 
 
-//class Carousel
+//classe carrossel
 class Carousel {
 
     
@@ -17,12 +17,12 @@ class Carousel {
             if(arr.length > 0){
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
-                Carousel.Next(); //start
-                Carousel._interval = setInterval(function(){ Carousel.Next(); },5000);
+                Carousel.Next(); //começar
+                Carousel._interval = setInterval(function(){ Carousel.Next(); },8000);
             }
             
         } else {
-            throw "Method Start need a Array Variable.";
+            throw "Método necessita de uma Variável pro Conjunto.";
         }
     }
 
