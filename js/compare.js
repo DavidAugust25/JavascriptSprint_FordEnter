@@ -34,7 +34,8 @@ function SetCarToCompare(el, carClass) {
 }
 
 function ShowCompare() {
-    if(carArr.length < 2) {
+    console.log(carArr);
+    if(carArr.length != 2) {
         alert("Precisa marcar 2 carros para apresentar a comparação");
         return;
     }
