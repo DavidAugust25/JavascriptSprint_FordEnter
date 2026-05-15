@@ -5,15 +5,18 @@
 //classe conjunto de armazenamento
 let carouselArr = [];
 
-
 //classe carrossel
 class Carousel {
 
-    
-      
-    static Start(arr){
-        if(arr){
+    constructor(image, title, url) {
+        this.image = image;
+        this.title = title;
+        this.url = url;
+    }  
 
+        static Start(arr){
+        if(arr){
+            
             if(arr.length > 0){
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
@@ -27,6 +30,22 @@ class Carousel {
     }
 
     static Next(){
-        
+       let carouselItem = carouselArr[Carousel._sequence];
+       let imagemdiv = document.getElementById("carousel");
+       let titulodiv = document.getElementById("carousel-title");
+
+       imagemdiv.style.backgroundImage = `url('img/${carouselItem.image}')`;
+       imagemdiv.style.backgroundSize = "cover";
+       imagemdiv.style.backgroundPosition = "center";
+       imagemdiv.style.transition = "all .8s ease-in-out";
+
+       titulodiv.innerHTML = `<a href="${carouselItem.url}">${carouselItem.title}</a>`;
+
+       Carousel._sequence++;
+
+       if (Carousel._sequence>=Carousel._size) {
+           Carousel._sequence = 0;
+       }
     }
 };
+
