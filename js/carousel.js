@@ -8,10 +8,10 @@ let carouselArr = [];
 //classe carrossel
 class Carousel {
 
-    constructor(image, title, url) {
-        this.image = image;
-        this.title = title;
-        this.url = url;
+    constructor(imagem, titulo, link) {
+        this.image = imagem;
+        this.title = titulo;
+        this.url = link;
     }  
 
         static Start(arr){
