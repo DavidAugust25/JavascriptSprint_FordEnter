@@ -33,7 +33,7 @@ function SetCarToCompare(el, carClass) {
           carArr.push(new Car(this.nome,this.preço));
             
         } else {
-          
+          carArr.pop(Car);
         } 
     } else {
         throw "You need set a Car Class";
