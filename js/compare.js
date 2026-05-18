@@ -30,7 +30,7 @@ function SetCarToCompare(el, carClass) {
    
     if(carClass instanceof Car){       
         if(el.checked){
-          carArr.push(new Car);
+          carArr.push(new Car(this.nome,this.preço));
             
         } else {
           
