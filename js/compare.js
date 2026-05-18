@@ -33,7 +33,7 @@ function SetCarToCompare(el, carClass) {
           carArr.push(new Car);
             
         } else {
-          
+          carArr.pop(Car);
         } 
     } else {
         throw "You need set a Car Class";
