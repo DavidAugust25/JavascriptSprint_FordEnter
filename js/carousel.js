@@ -1,11 +1,11 @@
 
 
-//carrossel
+// carrossel
 
-//classe conjunto de armazenamento
+// classe matriz de armazenamento 
 let carouselArr = [];
 
-//classe carrossel
+// classe carrossel
 class Carousel {
 
     constructor(imagem, titulo, link) {

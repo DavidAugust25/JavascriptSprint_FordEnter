@@ -1,5 +1,5 @@
 
-//carro
+// carro
 let carArr = [];
 
 class Car {
@@ -18,7 +18,7 @@ class Car {
     }
 } 
 
-// search on array if exist carClass returning 1 if not return -1
+// pesquisar na matriz a existência da carClass retornando 1 caso exista e -1 caso não
 function GetCarArrPosition(arr, carClass) {
     for(let i = 0; i < arr.length; i++){
         if(arr[i].nome  === carClass.nome)
@@ -70,12 +70,7 @@ function UpdateCompareTable() {
         document.getElementById(`compare_motor_${i}`).textContent = car.motor;
         document.getElementById(`compare_potencia_${i}`).textContent = car.potencia;
         document.getElementById(`compare_volumecacamba_${i}`).textContent = car.volumeCacamba;
-        document.getElementById(`compare_roda_${i}`).textContent = car.roda;
-        
+        document.getElementById(`compare_roda_${i}`).textContent = car.roda;       
         document.getElementById(`compare_preco_${i}`).textContent = `R$ ${car.preco.toLocaleString('pt-BR')}`;
     }
-
-function UpdateCompareTable() {
-    
-}
 }
