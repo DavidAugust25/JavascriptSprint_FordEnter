@@ -17,25 +17,52 @@ main {
 }
 
 div#carousel {
-    height: 46vh;
-    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    height: 60vh;
+    width: 90%;
      max-height: 628px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    border-radius: 25px;
+}
+
+div#carousel a {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+div#carousel-title  {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+    display: block;
+    text-align: center;
+    width: 500px;
+    height: 20px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    z-index: 2;
 }
 
 div#carousel-title a {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 20px;
+    width: 500px;
 }
 
-div#carousel-title  {
-    display: block;
-    text-align: center;
-    margin-top: -25px;
-    margin-bottom: 10px;
-    font-weight: bold;
+div#carousel-title a:hover {
+    color: #ccc;
 }
 
 div#nextprev {
@@ -43,10 +70,18 @@ div#nextprev {
     display: flex;
     justify-content: space-between;
     position: absolute;
-    left: 10%;
-    right: 10%;
-    top: 71.5%;
+    left: 50%;
+    right: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
     font-weight: bold;
+    z-index: 1;
+}
+
+div#nextprev button {
+    font-weight: bold;
+    height: 30px;
+    font-size: 15px;
 }
 
 header ul {
@@ -114,6 +149,13 @@ nav#social ul img {
 span.redesociais {
     color: #ffffff;
     vertical-align: super;
+}
+
+span#textoQueFaltava {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #1351d8;
 }
 
 footer {

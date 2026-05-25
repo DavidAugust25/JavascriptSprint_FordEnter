@@ -7,6 +7,7 @@
     <title>Ford</title>    
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+            <script src="js/carousel.js"></script>
 </head>
 <body>
     <header>       
@@ -34,10 +35,9 @@
         <div id="carousel-title">
         </div>
         <div id="nextprev">
-            <div><button class="prev" onclick="prevSlide()">&#10094 Anterior</button></div>
-            <div><button class="next" onclick="nextSlide()">Próxima &#10095</button></div>
+            <div><button class="prev" onclick="Carousel.prevSlide()">&#10094 Anterior</button></div>
+            <div><button class="next" onclick="Carousel.nextSlide()">Próxima &#10095</button></div>
         </div>
-        <script src="js/carousel.js"></script>
         <script>
              // inserir cada imagem no carrossel.         
             carouselArr.push(new Carousel("imagem_1.jpg","Esta é a nova Ranger Ford 2022. Verifique novidades.","lancamento.html"));
@@ -50,13 +50,13 @@
         <nav id="social">
             <ul>
                 <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+                <li><a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" title="Facebook"><img src="img/facebook-50.png"></a></li>
+                <li><a href="https://www.youtube.com/user/FordBrasil" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="https://www.instagram.com/fordbrasil/?hl=pt-br" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"  />
+           <img src="img/ford-96.png" width="70"/>
         </div>
     </footer>    
 </body>

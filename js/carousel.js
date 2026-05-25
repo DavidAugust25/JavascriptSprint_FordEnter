@@ -32,12 +32,14 @@ class Carousel {
     static Next(){
        let carouselItem = carouselArr[Carousel._sequence];
        let imagemdiv = document.getElementById("carousel");
+       let linkdiv = document.getElementById("carousel-link");
        let titulodiv = document.getElementById("carousel-title");
 
        imagemdiv.style.backgroundImage = `url('img/${carouselItem.image}')`;
        imagemdiv.style.backgroundSize = "cover";
        imagemdiv.style.backgroundPosition = "center";
        imagemdiv.style.transition = "all .8s ease-in-out";
+       imagemdiv.innerHTML = `<a href="${carouselItem.url}"></a>`;
 
        titulodiv.innerHTML = `<a href="${carouselItem.url}">${carouselItem.title}</a>`;
 
@@ -46,6 +48,14 @@ class Carousel {
        if (Carousel._sequence>=Carousel._size) {
            Carousel._sequence = 0;
        }
+    }
+    static nextSlide() {
+        carouselItem = carouselArr[Carousel._sequence];
+        Carousel._sequence++;
+    }
+    static prevSlide() {
+        carouselItem = carouselArr[Carousel._sequence];
+        Carousel._sequence--;
     }
 };
 

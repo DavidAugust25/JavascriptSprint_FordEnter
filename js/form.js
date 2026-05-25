@@ -2,12 +2,11 @@
 // classe contato
 
 class contato {
-    constructor (nome,sobrenome,email,cpf,telefone,contato) {
+    constructor (nome,email,telefone,mensagem,contato) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
         this.email = email;
-        this.cpf = cpf;
         this.telefone = telefone;
+        this.mensagem = mensagem;
         this.contato = contato;
     }
 }
@@ -28,10 +27,9 @@ function Post(form) {
 
   let data = new contato(
     form.elements.namedItem("nome").value,
-    form.elements.namedItem("sobrenome").value, 
-    form.elements.namedItem("email").value, 
-    form.elements.namedItem("cpf").value, 
-    form.elements.namedItem("telefone").value, 
+    form.elements.namedItem("email").value,     
+    form.elements.namedItem("telefone").value,
+    form.elements.namedItem("mensagem").value,  
     form.elements.namedItem("contato").value
 );
 Enviar();
