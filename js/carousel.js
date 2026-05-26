@@ -18,7 +18,7 @@ class Carousel {
         if(arr && arr.length > 0){
             Carousel._sequence = 0;
             Carousel._size = arr.length;
-            Carousel.Render(); // Mostrar o primeiro slide imediatamente
+            Carousel.Render();
             Carousel.ResetTimer();
         } else {
             throw "Método necessita de uma Variável pro Conjunto válido.";
