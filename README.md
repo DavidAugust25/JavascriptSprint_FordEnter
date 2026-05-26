@@ -37,4 +37,6 @@ Main - Contato
 
 Estou enviando este código pois ele apresenta qualidade adequada e atende todos os requisitos da sprint. 
 
-![launchepage](https://github.com/DavidAugust25/JavascriptSprint_FordEnter/blob/b8520100e73fc9362d572be528d9cf4b6b8131f9/Screenshot%202026-05-26%20150135.png)
+![LaunchPage](https://github.com/DavidAugust25/JavascriptSprint_FordEnter/blob/b8520100e73fc9362d572be528d9cf4b6b8131f9/Screenshot%202026-05-26%20150135.png)
+![SupportPage](https://github.com/DavidAugust25/JavascriptSprint_FordEnter/blob/abf5bf497d60f2d1f769867a710a9e5c5694ab0c/Screenshot%202026-05-26%20150143.png)
+
