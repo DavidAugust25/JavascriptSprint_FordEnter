@@ -141,7 +141,7 @@ nav li {
 }
 
 main {
-    height: calc(80% - 2px);
+    height: calc(80% - 1px);
 }
 
 nav#social {
