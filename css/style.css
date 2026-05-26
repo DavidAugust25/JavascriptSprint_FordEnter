@@ -98,19 +98,21 @@ ul {
 header {
     background: #FFFFFF;
     border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
-    padding: 10px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header div {
     display: inline;
     vertical-align: middle;
+    width: 20%;
 }
 
 header nav {
     display: inline-block;
     vertical-align: middle;
-    width: 80vw;
 }
 
 header nav a {
@@ -134,12 +136,11 @@ nav li {
 }
 
 main {
-    min-height: calc(100% - 167px);
+    height: calc(80% - 2px);
 }
 
 nav#social {
     display: inline;
-    width: 80%;
 }
 
 nav#social ul img {
@@ -159,14 +160,25 @@ span#textoQueFaltava {
 }
 
 footer {
-    background: #1B357E;
-    padding: 20px;
+    background: #1b357e;
+    color: #ffffff;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
 footer div {
-    display: inline;
-    float: right;
-    margin-right: 40px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div span {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+footer div span img {
+    width: 40px;
 }
 
 button:hover {
