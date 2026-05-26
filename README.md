@@ -28,6 +28,7 @@ Main - Index
 Main - Lançamentos
 - Introdução da tela de comparação, utilizando javascript para administrar as matrizes selecionadas.
 - Ajuste na lógica matemática das funções
+- Ajustes estéticos na página
 
 Main - Contato
 - Remoção dos campos de CPF e Sobrenome, como foi pedido
