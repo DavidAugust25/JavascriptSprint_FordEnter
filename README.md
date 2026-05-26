@@ -1,5 +1,7 @@
 # JavascriptSprint_FordEnter
 
+![Preview](https://github.com/DavidAugust25/JavascriptSprint_FordEnter/blob/b9f1418472350e845b18b136232f262bd5c35a3d/Screenshot%202026-05-26%20150121.png)
+
 Esse é um projeto feito com muito amor e carinho, respeitando todos os requerimentos da Sprint, com o intuito de tirar uma nota boa. 
 
 Aqui há a lista de todas as mudanças feitas no arquivo disponibilizado pelo professor:
