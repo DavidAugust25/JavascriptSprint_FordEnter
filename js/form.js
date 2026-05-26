@@ -30,14 +30,15 @@ function Post(form) {
     form.elements.namedItem("email").value,     
     form.elements.namedItem("telefone").value,
     form.elements.namedItem("mensagem").value,  
-    form.elements.namedItem("contato").value
+    form.elements.namedItem("contato").value,
 );
+    console.log(data);
+
 Enviar();
 }
 
 function Enviar() {
-
-    var nome = document.getElementById("nome");
+    let nome = document.getElementById("nome");
 
     if (isValid == true) {
         alert('Obrigado sr(a) ' + nome.value  + ' os seus dados foram encaminhados com sucesso');
